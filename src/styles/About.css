@@ -1,0 +1,84 @@
+.about {
+    padding: 50px 20px;
+    color: white;
+    min-height: 100vh;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about h3 {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  .about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .companies, .specialties, .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .companies span, .specialties span, .technologies span {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Mobile adjustments */
+  @media (max-width: 768px) {
+    .about {
+      padding: 30px 15px;
+    }
+  
+    .about h2 {
+      font-size: 28px;
+    }
+  
+    .about h3 {
+      font-size: 20px;
+    }
+  
+    .about p {
+      font-size: 14px;
+      max-width: 90%;
+    }
+  
+    .companies span, .specialties span, .technologies span {
+      padding: 8px 15px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about h2 {
+      font-size: 24px;
+    }
+  
+    .about h3 {
+      font-size: 18px;
+    }
+  
+    .about p {
+      font-size: 12px;
+    }
+  
+    .companies span, .specialties span, .technologies span {
+      padding: 6px 10px;
+      font-size: 10px;
+    }
+  }

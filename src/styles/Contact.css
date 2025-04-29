@@ -1,0 +1,79 @@
+.contact {
+    padding: 50px 20px;
+    color: white;
+    min-height: 100vh;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .contact p {
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 20px auto;
+  }
+  
+  .contact-options button {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Mobile adjustments */
+  @media (max-width: 768px) {
+    .contact {
+      padding: 30px 15px;
+    }
+  
+    .contact h2 {
+      font-size: 28px;
+    }
+  
+    .contact p {
+      font-size: 14px;
+      max-width: 90%;
+    }
+  
+    .contact-options {
+      max-width: 90%;
+    }
+  
+    .contact-options button {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact h2 {
+      font-size: 24px;
+    }
+  
+    .contact p {
+      font-size: 12px;
+    }
+  
+    .contact-options button {
+      padding: 6px;
+      font-size: 12px;
+    }
+  }

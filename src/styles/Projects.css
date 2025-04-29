@@ -1,0 +1,51 @@
+.projects {
+    padding: 50px 20px;
+    color: white;
+    background: url('../assets/background-pattern.png') repeat;
+    min-height: 100vh;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .projects h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .show-more {
+    background: #6b48ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  /* Mobile adjustments */
+  @media (max-width: 768px) {
+    .projects {
+      padding: 30px 15px;
+    }
+  
+    .projects h2 {
+      font-size: 24px;
+    }
+  
+    .show-more {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .projects h2 {
+      font-size: 20px;
+    }
+  
+    .show-more {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+  }
