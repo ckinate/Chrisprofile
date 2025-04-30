@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
+import ParticleAnimationResize from './components/ParticleAnimationResize'
 
 function App() {
  
@@ -16,6 +17,7 @@ function App() {
       <div className="App">
         <Navbar />
         <Particlebackground />
+        <ParticleAnimationResize/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

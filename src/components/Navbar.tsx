@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import '../styles/Navbar.css';
 import { useState } from "react";
-
+import profileImage from '../assets/profileImage/ChrisPicture.jpeg'
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const toggleMenu = () => {

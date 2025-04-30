@@ -36,7 +36,9 @@ export default function Projects() {
         },
       ];
   return (
+
     <div className="projects">
+     
       <h2>PROJECTS</h2>
       {projects.map((project, index) => (
         <ProjectCard

@@ -1,18 +1,23 @@
 import  { useEffect, useState } from 'react'
 import '../styles/Home.css'
 import Projects from './Projects';
+import Experience from './Experience';
+import profileImage from '../assets/profileImage/ChrisPicture.jpeg'
 
 export default function Home() {
     const [isFirstText, setIsFirstText] = useState(true);
     useEffect(() => {
         const interval = setInterval(() => {
           setIsFirstText((prev) => !prev); // Toggle between the two texts
-        }, 5000); // Change every 5 seconds
+        }, 3000); // Change every 5 seconds
     
         return () => clearInterval(interval); // Cleanup on unmount
       }, []);
   return (
     <div className="home">
+      <div className="parent">
+
+      <div className="profilePic"><img src={profileImage} alt="" /></div>
       <div className="animated-text">
         {isFirstText ? (
           <>
@@ -28,11 +33,14 @@ export default function Home() {
           </>
         )}
       </div>
+      </div>
+     
       <div className="intro-text">
-        <p>
+        <p className='paraText'>
           With a strong foundation built over 7 years in software development, I have consistently delivered outstanding results across a wide spectrum of projects. My extensive experience includes collaborating effectively with cross-functional teams, utilizing a deep knowledge of diverse technologies to create exceptional web, mobile, and desktop applications. My unwavering commitment to self-improvement fuels my constant learning and adaptability, allowing me to approach each project with a unique problem-solving perspective. I am dedicated to maintaining a track record of excellence. Thank you for considering my profile.
         </p>
       </div>
+      <Experience/>
       <Projects/>
     </div>
 
