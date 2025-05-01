@@ -12,10 +12,23 @@
   }
   
   .logo {
-    font-size: 24px;
-    font-weight: bold;
+    /* font-size: 24px;
+    font-weight: bold; */
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%; /* This makes the container round */
    
   }
+ 
+  
+  .logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%; /* This makes the image round */
+  }
+
   
   .nav-links {
     list-style: none;
@@ -108,3 +121,5 @@
       font-size: 18px;
     }
   }
+
+ 
