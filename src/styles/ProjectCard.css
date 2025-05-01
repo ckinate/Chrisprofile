@@ -1,58 +1,83 @@
-.project-card {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+
+
+  .project-card {
+    background-color: rgba(255, 255, 255, 0.05);
     padding: 20px;
-    margin: 20px auto;
-    color: white;
-    text-align: left;
-    max-width: 800px;
-    width: 90%;
-    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  .project-title{
+    font-size: 35px;
+    padding-bottom: 10px;
+    font-family: Garamond, serif;
+   
+    
+  }
+  .project-desc{
+    padding-top: 8px;
   }
   
-  .project-card h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  .project-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
   }
   
-  .project-card p {
-    font-size: 14px;
-    line-height: 1.5;
+  .project-text {
+    flex: 1;
+    min-width: 250px;
   }
   
-  .project-card img {
-    max-width: 200px;
+  .project-image {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .tech-stack-section {
     margin: 10px 0;
-    display: block;
   }
   
   .tech-stack {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
-    margin: 10px 0;
-  }
-  
-  .tech-stack span {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  .links {
-    display: flex;
-    flex-wrap: wrap;
     gap: 10px;
+    margin-top: 5px;
   }
   
-  .links a {
-    display: inline-block;
+  .tech-item {
+    background-color: #6c5ce7;
     padding: 5px 10px;
-    background: white;
-    color: #6b48ff;
-    text-decoration: none;
     border-radius: 5px;
   }
+  
+  .project-links {
+    margin-top: 10px;
+  }
+  
+  .project-links a {
+    display: inline-block;
+    background-color: #fff;
+    color: #6c5ce7;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
   
   /* Mobile adjustments */
   @media (max-width: 768px) {
@@ -111,3 +136,28 @@
       font-size: 10px;
     }
   }
+ /* New */
+  @media (max-width: 768px) {
+    .project-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-text, .project-image {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .project-image img {
+      max-width: 100%;
+    }
+  
+    .tech-stack {
+      justify-content: center;
+    }
+  
+    .project-links {
+      justify-content: center;
+    }
+  }
+  

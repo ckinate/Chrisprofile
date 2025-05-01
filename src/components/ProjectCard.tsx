@@ -19,19 +19,31 @@ interface Link {
 export default function ProjectCard({ title, description, image, techStack, links } : ProjectCardProps) {
   return (
     <div className="project-card">
-    <h3>{title}</h3>
-    <p>{description}</p>
-    <img src={image} alt={title} />
-    <div className="tech-stack">
-      {techStack.map((tech, index) => (
-        <span key={index}>{tech}</span>
-      ))}
+      <div className="project-content">
+        <div className="project-text">
+          <h3 className='project-title'>{title}</h3>
+          <hr/>
+          <p className='project-desc'>{description}</p>
+          <div className="tech-stack-section">
+            <strong>Tech Stack:</strong>
+            <div className="tech-stack">
+              {techStack.map((tech, index) => (
+                <span key={index} className="tech-item">{tech}</span>
+              ))}
+            </div>
+          </div>
+          <div className="project-links">
+            {links.map((link, index) => (
+              <a key={index} href={link.url} target="_blank" rel="noopener noreferrer">
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
+        <div className="project-image">
+          <img src={image} alt={title} />
+        </div>
+      </div>
     </div>
-    <div className="links">
-      {links.map((link, index) => (
-        <a key={index} href={link.url} target="_blank" rel="noopener noreferrer">{link.label}</a>
-      ))}
-    </div>
-  </div>
-  )
+  );
 }

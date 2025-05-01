@@ -6,23 +6,28 @@
     box-sizing: border-box;
     width: 100%;
   }
+  .about h1{
+    font-family: Lucida Handwriting, Brush Script MT, Cursive;
+  }
   
   .about h2 {
     font-size: 36px;
     margin-bottom: 20px;
+   
   }
   
   .about h3 {
     font-size: 24px;
     margin: 20px 0;
+    font-family: Lucida Handwriting, Brush Script MT, Cursive;
   }
   
-  .about p {
+  /* .about p {
     max-width: 800px;
     margin: 0 auto;
     font-size: 16px;
     line-height: 1.5;
-  }
+  } */
   
   .companies, .specialties, .technologies {
     display: flex;
@@ -34,9 +39,12 @@
   
   .companies span, .specialties span, .technologies span {
     background: rgba(255, 255, 255, 0.2);
+    /* background-color: #6B21A8; */
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 14px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
   }
   
   /* Mobile adjustments */
@@ -61,6 +69,8 @@
     .companies span, .specialties span, .technologies span {
       padding: 8px 15px;
       font-size: 12px;
+      font-family: 'Courier New', monospace;
+      font-weight: bold;
     }
   }
   
@@ -80,7 +90,26 @@
     .companies span, .specialties span, .technologies span {
       padding: 6px 10px;
       font-size: 10px;
+      font-family: 'Courier New', monospace;
+      font-weight: bold;
     }
+  }
+
+  .about-text {
+    margin-top: 20px;
+  }
+  
+
+  .about-paratext{
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    height: 250px;
+    font-family: Verdana, sans-serif;
   }
 
   
@@ -106,13 +135,12 @@
   .intro .left .imgContainer {
     width: 200px;
     height: 200px;
-    /* background-color: crimson; */
     border-radius: 50%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     float: right;
-    margin-right: 100px;
+    margin-right: 70px;
     margin-top: 20px;
     overflow: hidden;
   }
@@ -147,7 +175,7 @@
   .intro .right .wrapper {
     width: 100%;
     height: 100%;
-    padding-left: 10px;
+    padding-left: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -14,11 +14,14 @@ export default function Navbar() {
         <span className={isMenuOpen ? 'bar active' : 'bar'}></span>
         <span className={isMenuOpen ? 'bar active' : 'bar'}></span>
         <span className={isMenuOpen ? 'bar active' : 'bar'}></span>
+        <span className={isMenuOpen ? 'bar active' : 'bar'}></span>
       </div>
       <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
-        <li><Link to="/about" onClick={toggleMenu}>About Me</Link></li>
-        <li><Link to="/contact" onClick={toggleMenu}>Reach Me</Link></li>
+        <li><Link to="/about" onClick={toggleMenu}>About </Link></li>
+        <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
+        <li><Link to="/education" onClick={toggleMenu}>Education</Link></li>
+        <li><Link to="/projects" onClick={toggleMenu}>Projects</Link></li>
       </ul>
    
      </nav>

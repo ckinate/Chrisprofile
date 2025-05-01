@@ -8,6 +8,9 @@ import About from './pages/About'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import ParticleAnimationResize from './components/ParticleAnimationResize'
+import Footer from './components/Footer'
+import Education from './pages/Education'
+import Experience from './pages/Experience'
 
 function App() {
  
@@ -23,18 +26,15 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/experiences" element={<Experience />} />
         </Routes>
+        <Footer/>
         
       </div>
 
     </BrowserRouter>
-    // <>
-    //    <div className="relative min-h-screen flex items-center justify-center bg-gray-900 text-white">
-    //     <Particlebackground />
-    //     <h1 className="text-5xl font-bold z-10">Particle Animation in React</h1>
-    //   </div>
-     
-    // </>
+ 
   )
 }
 

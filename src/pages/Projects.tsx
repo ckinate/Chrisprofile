@@ -2,38 +2,85 @@
 
 import ProjectCard from '../components/ProjectCard'
 import '../styles/Projects.css'
-import Image1 from '../assets/projectImage/Screenshot1.png'
-import Image2 from '../assets/projectImage/Screenshot2.png'
-import Image3 from '../assets/projectImage/Screenshot3.png'
-import Image4 from '../assets/projectImage/Screenshot4.png'
-import Image5 from '../assets/projectImage/Screenshot5.png'
+import BankRecImage from '../assets/projectImage/BankRec.png'
+import VendorImage from '../assets/projectImage/Vendor.png'
+import InventoryImage from '../assets/projectImage/Inventory.png'
+import ExpenseImage from '../assets/projectImage/Expense.png'
+import RealEstateImage from '../assets/projectImage/RealEstate.png'
+import ProductImage from '../assets/projectImage/Product.png'
+import ProcurementImage from '../assets/projectImage/Procurement.png'
+import FinanceImage from '../assets/projectImage/Finance.png'
+import HospitalImage from '../assets/projectImage/HospitalImage.jpg'
+
+
 
 export default function Projects() {
     const projects = [
         {
-          title: 'Newsworthy Mobile App',
-          description: 'I built Newsworthy App for a News startup. In the first version, the users are able to see news and get real-time notification of news update. Also, administrators are able to post both text news headline news which are audio format so users can listen to them just like a podcast. I designed the UI/UX, created the backend API services, built a portfolio website and created the functionality of the mobile application.',
-          image: Image1, // Replace with actual image path
-          techStack: ['React Native', 'Firebase', 'Cloudinary', 'Unstated', 'GraphQL'],
+          title: 'Bank Reconciliation App',
+          description: 'Bank Reconciliation was developed under fintrak software company and is use to automate reconcilliation process using a smart algorithm to reconcile the Ledger and bank statement with an external integration for direct pulling of Bank statement from various Banks.It eliminate the manual reconciliation process and with posting to ledger after approval process.I worked on both the frontend and backend and the integration with external API',
+          image: BankRecImage, 
+          techStack: ['Angular', '.Net Core', 'MSSQL', 'MONO API', 'Redis','HangFire'],
           links: [
-            { label: 'App Store', url: '#' },
-            { label: 'Google Play', url: '#' },
+            { label: 'Web', url: 'https://erp.fintraksoftware.com/Account/Login' }
           ],
         },
         {
-          title: 'Agnes Sponsorship Web App',
-          description: 'Agnes Sponsorship Web App is a side project of the mumspring organization, where individual firms or cooperatives or NGOs can sponsor their own women to a successful postnatal and antenatal process. I worked on the development to the integration both one-time payment and a subscription based plan. I also featured in the backend development to monitor, keep track and maintain beneficiaries specific to their sponsors. I followed through the development process from the frontend to the backend API services unit testing and to its documentation.',
-          image: Image2, // Replace with actual image path
-          techStack: ['Flutterwave', 'Paystack'],
-          links: [{ label: 'Web', url: '#' }],
+          title: 'Vendor Management App',
+          description: 'Vendor Management App was developed under Fintrak Software company and is use to manage organisation vendor onboarding process from the setup to categorisation and registeration of the organisation vendors. It is also use for vendor deactivation or blacklisting and each process pass through a robust approval process.I worked on both the frontend and backend and the report aspect of it ',
+          image: VendorImage, // Replace with actual image path
+          techStack: ['.Net Core', 'Postgres','MSSQL','Angular'],
+          links: [{ label: 'Web', url: 'https://erp.fintraksoftware.com/Account/Login' }],
         },
         {
-          title: 'NIBSS Enterprise App',
-          description: 'The NIBSS Enterprise app is built under the Fintrak software organization. This product consists of features ranging from Companies workflow, Expense management, Document Management, Financial Management etc. to aid the smooth run of their operations.',
-          image: Image3, // Replace with actual image path
-          techStack: ['Modern Technologies'],
-          links: [{ label: 'Web', url: '#' }],
-        },
+          title: 'Inventory Management App',
+          description: 'Inventory Management app is built under the Fintrak software organization. This product is use to manage all inventories of an organisation and contain features such as inventories requisition,reorder level,stock transfer, Inventory Categorisation,Item creation, allocation, return allocation, approval and a rebust report. I worked on both the frontend and backend',
+          image: InventoryImage, // Replace with actual image path
+          techStack: ['.Net Core', 'Postgres','MSSQL','Angular'],
+          links: [{ label: 'Web', url: 'https://erp.fintraksoftware.com/Account/Login' }],
+      },
+      {
+        title: 'Expense Management App',
+        description: 'Expense Management App is built under the Fintrak software organization. This product is use for payment of all expenses. It consist of expense requisition, approval process, expense payment,accrual, cash advance requisition, cash retirement and the various reports. I worked on both the frontend and backend and the report',
+        image: ExpenseImage, 
+        techStack: ['.Net Core', 'Postgres','MSSQL','Angular'],
+        links: [{ label: 'Web', url: 'https://erp.fintraksoftware.com/Account/Login' }],
+      },
+      {
+        title: 'Product Management App',
+        description: 'Product Management App is built under the Fintrak software organization. This is use to manage any organisation products, it consist of product setup, product categorisation, product creation and its approval process and a comprehensive reports. I worked on both the frontend and backend',
+        image: ProductImage, 
+        techStack: ['.Net Core', 'Postgres','MSSQL','Angular'],
+        links: [{ label: 'Web', url: 'https://erp.fintraksoftware.com/Account/Login' }],
+      },
+      {
+        title: 'Procurement Management App',
+        description: 'The NIBSS Enterprise app is built under the Fintrak software organization. This product consists of features ranging from Companies workflow, Expense management, Document Management, Financial Management etc. to aid the smooth run of their operations.',
+        image: ProcurementImage, 
+        techStack: ['.Net Core', 'Postgres','MSSQL','Angular'],
+        links: [{ label: 'Web', url: 'https://erp.fintraksoftware.com/Account/Login' }],
+      },
+      {
+        title: 'Finance Management App',
+        description: 'The NIBSS Enterprise app is built under the Fintrak software organization. This product consists of features ranging from Companies workflow, Expense management, Document Management, Financial Management etc. to aid the smooth run of their operations.',
+        image: FinanceImage, 
+        techStack: ['.Net Core', 'Postgres','MSSQL','Angular'],
+        links: [{ label: 'Web', url: 'https://erp.fintraksoftware.com/Account/Login' }],
+      },
+      {
+        title: 'Real Estate Management App',
+        description: 'The NIBSS Enterprise app is built under the Fintrak software organization. This product consists of features ranging from Companies workflow, Expense management, Document Management, Financial Management etc. to aid the smooth run of their operations.',
+        image: RealEstateImage, 
+        techStack: ['ExpressJs', 'MongoDb','Firebase','React'],
+        links: [{ label: 'Web', url: 'https://christech-estate.onrender.com/sign-in' }],
+      },
+      {
+        title: 'Hospital Management App',
+        description: 'The NIBSS Enterprise app is built under the Fintrak software organization. This product consists of features ranging from Companies workflow, Expense management, Document Management, Financial Management etc. to aid the smooth run of their operations.',
+        image: HospitalImage, 
+        techStack: ['.Net Core', 'Postgres','Firebase','React'],
+        links: [{ label: 'Web', url: '#' }],
+      }
       ];
   return (
 
@@ -50,7 +97,7 @@ export default function Projects() {
           links={project.links}
         />
       ))}
-      <button className="show-more">SHOW MORE</button>
+      {/* <button className="show-more">SHOW MORE</button> */}
     </div>
   )
 }
