@@ -55,7 +55,7 @@ export default function Projects() {
       },
       {
         title: 'Procurement Management App',
-        description: 'The NIBSS Enterprise app is built under the Fintrak software organization. This product consists of features ranging from Companies workflow, Expense management, Document Management, Financial Management etc. to aid the smooth run of their operations.',
+        description: 'Procurement Management App is built under the Fintrak software organization. This is a robust application that is use to manage all procurement processes from start to the end. It consist of requisition',
         image: ProcurementImage, 
         techStack: ['.Net Core', 'Postgres','MSSQL','Angular'],
         links: [{ label: 'Web', url: 'https://erp.fintraksoftware.com/Account/Login' }],
