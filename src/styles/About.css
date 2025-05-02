@@ -108,8 +108,22 @@
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
-    height: 250px;
+    min-height: 250px;
+    /* Ensure text wraps properly */
+    overflow-wrap: break-word;
+    word-break: break-word;
+    /* Optional: Allow scrolling if content overflows */
+    overflow-y: auto;
+  /* Ensure box-sizing includes padding */
+    box-sizing: border-box;
     font-family: Verdana, sans-serif;
+  }
+  @media (max-width: 600px) {
+    .about-paratext {
+      max-width: 90%; /* Reduce width for smaller screens */
+      font-size: 14px; /* Slightly smaller font for readability */
+      padding: 15px; /* Adjust padding */
+    }
   }
 
   
