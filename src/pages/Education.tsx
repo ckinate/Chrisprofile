@@ -23,7 +23,7 @@ export default function Education() {
       ];
   return (
     <div className="max-w-3xl mx-auto py-12 px-4">
-          <h1 className="education-text">Education</h1>
+          <h1 className="education-text">EDUCATION</h1>
           <div className="relative">
             <div className="absolute left-[208px] top-0 h-full w-1 bg-blue-500 hidden md:block"></div>
             {education.map((edu, index) => (
