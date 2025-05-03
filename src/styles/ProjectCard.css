@@ -58,7 +58,8 @@
   }
   
   .tech-item {
-    background-color: #6c5ce7;
+    /* background-color: #6c5ce7; */
+    background-color: #2A5C5A;
     padding: 5px 10px;
     border-radius: 5px;
   }
