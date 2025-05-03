@@ -111,7 +111,7 @@ export default function Experience() {
         <div className="flex justify-between items-center">
           <div>
             <h3 className=" text-2xl font-semibold">Cinfores Technology </h3>
-            <p >Portharcourt Nigeria • Jan 2016- Dec 2017</p>
+            <p >Portharcourt Nigeria • Jan 2016- Dec 2016</p>
             <p className="text-lg font-medium mt-2">Frontend Developer</p>
           </div>
         </div>
