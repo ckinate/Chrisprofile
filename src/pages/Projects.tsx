@@ -2,15 +2,16 @@
 
 import ProjectCard from '../components/ProjectCard'
 import '../styles/Projects.css'
-import BankRecImage from '../assets/projectImage/BankRec.png'
-import VendorImage from '../assets/projectImage/Vendor.png'
-import InventoryImage from '../assets/projectImage/Inventory.png'
-import ExpenseImage from '../assets/projectImage/Expense.png'
+import BankRecImage from '../assets/projectImage/BankRec.jpg'
+import VendorImage from '../assets/projectImage/Vendor.jpg'
+import InventoryImage from '../assets/projectImage/Inventory.jpg'
+import ExpenseImage from '../assets/projectImage/Expense.jpg'
 import RealEstateImage from '../assets/projectImage/RealEstate.png'
-import ProductImage from '../assets/projectImage/Product.png'
-import ProcurementImage from '../assets/projectImage/Procurement.png'
-import FinanceImage from '../assets/projectImage/Finance.png'
+import ProductImage from '../assets/projectImage/Product.jpg'
+import ProcurementImage from '../assets/projectImage/Procurement.jpg'
+import FinanceImage from '../assets/projectImage/Finance.jpg'
 import HospitalImage from '../assets/projectImage/HospitalImage.jpg'
+import ApprovalImage from '../assets/projectImage/Approval.jpg'
 
 
 
@@ -64,6 +65,13 @@ export default function Projects() {
         title: 'Finance Management App',
         description: 'Finance Management App is built under the Fintrak software organization. This product is use to manage the financial operation of an organisation rainging from accounting period setup,Financial statement,Journal Entry,ledger Details, Chart of Account, End of Period,Trial Balance and Reports. I worked on both frontend and backend',
         image: FinanceImage, 
+        techStack: ['.Net Core', 'Postgres','MSSQL','Angular'],
+        links: [{ label: 'Web', url: 'https://erp.fintraksoftware.com/Account/Login' }],
+      },
+       {
+        title: 'Approval Management System',
+        description: 'Approval Management App is built under the Fintrak software organization. This is use to automate the approval process of an organisation.It can be configure to follow through the organisation organogram or through  direct users selected during the set up',
+        image: ApprovalImage, 
         techStack: ['.Net Core', 'Postgres','MSSQL','Angular'],
         links: [{ label: 'Web', url: 'https://erp.fintraksoftware.com/Account/Login' }],
       },
