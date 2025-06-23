@@ -15,7 +15,7 @@ export default function Education() {
           ]
         },
         {
-          date: "Jan 2001 - June 2006",
+          date: "Jan 2001 - June 2007",
           title: "WASSCE",
           company: "Comprehensive Secondary School",
           details: ["Obtained  WASSCE"]
